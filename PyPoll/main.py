@@ -7,7 +7,8 @@ votes = []                                                                      
 candidate = []                                                                      # Create 'candidate' list to store candidates
 
 with open(election_data_csv, 'r') as csvfile:
-    csvreader = csv.DictReader(csvfile, delimiter=',')                              # Read csv without the header row, split the data by commas
+    csvreader = csv.reader(csvfile, delimiter=',')                                  # Read csv including the header row, split the data by commas
+    header = next(csvreader)                                                        # Set variable to store header row
     total_votes = int(len(list(csvreader)))                                         # Calculate the total number of votes in the csv file
     
 with open(election_data_csv, 'r') as csvfile:

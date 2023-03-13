@@ -8,7 +8,8 @@ profit_loss = []                                                                
 change_profit_loss = []                                                         # Create 'change_profit_loss' list to store difference of profit/loss values between months
 
 with open(budget_data_csv, 'r') as csvfile:
-    csvreader = csv.DictReader(csvfile, delimiter=',')                          # Read csv without the header row, split the data by commas
+    csvreader = csv.reader(csvfile, delimiter=',')                              # Read csv including the header row, split the data by commas
+    header = next(csvreader)                                                    # Set variable to store header row
     total_months = int(len(list(csvreader)))                                    # Calculate the total number of months in the csv file
 
 with open(budget_data_csv, 'r') as csvfile:
