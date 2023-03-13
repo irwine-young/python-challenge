@@ -1,6 +1,6 @@
 # python-challenge
 
-Python scripting was used to analysed 2 csv files, budget_data.csv for PyBank and election_data.csv for PyPoll. Each related ython files (as main.py) were stored under the main PyBank and PyPoll folder, with the csv files in the Resources folder, and text file output in the analysis folder. 
+Python scripting was used to analysed 2 csv files, budget_data.csv for PyBank and election_data.csv for PyPoll. Each related python files (as main.py) were stored under the main PyBank and PyPoll folder, with the csv files in the Resources folder, and text file output in the analysis folder. 
 
 For PyBank / budget_data.csv file
 Python scripting was used to analyse the budget_data.csv for the following:
